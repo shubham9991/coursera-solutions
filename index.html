@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>module2-solution</title>
+</head>
+<style >
+	/*basic style*/
+	* {
+		box-sizing: border-box;
+	}
+	body {
+		background-color: white;
+	}
+	h1 {
+		margin: 100px;
+		text-align: center;
+		font-family: Helvetica;
+		font-weight: bold;
+		font-size: 175%;
+	}
+	section {
+		position: relative;
+		padding: 15px;
+		width: 100%;
+	}
+	p {
+		position: relative;
+		clear: right;
+	}
+	div {
+		position: relative;
+		background-color: gray;
+		border: 1px solid black;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: auto;
+	}
+	.sub1 {
+		float: right;
+		width: 100px;
+		padding: 5px;
+		margin: 0px;
+		border: 1px solid black;
+		text-align: center;
+		font-size: 125%;
+		font-weight: bold;
+		background-color: white;
+
+	}
+	.sub2 {
+		float: right;
+		color: white;
+		width: 100px;
+		padding: 5px;
+		margin: 0px;
+		border: 1px solid black;
+		text-align: center;
+		font-size: 125%;
+		font-weight: bold;
+		background-color: maroon;
+
+	}
+	.sub3 {
+		color: black;
+		float: right;
+		width: 100px;
+		padding: 5px;
+		margin: 0px;
+		border: 1px solid black;
+		text-align: center;
+		font-size: 125%;
+		font-weight: bold;
+		background-color: tomato;
+
+	}
+	.content {
+		padding: 5px;
+		border: none;
+		background-color: gray;
+		font-family: Helvetica;
+		color: black;
+		margin: 0px;
+		height: 200px;
+		overflow: auto;
+	}
+
+	.row {
+		width: 90%;
+	}
+
+	/*desktop version*/
+	@media (min-width: 992px){
+		.column-lg-4 {
+			float: left;
+			width: 33.33%;
+		}
+	}
+	/*tablet version*/
+	@media (min-width: 768px) and (max-width: 991px){
+		.colmn-md-6 {
+			float: left;
+			width: 50%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.colmn-md-12 {
+			float: left;
+			width: 100%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+	/*mobile version*/
+	@media (max-width: 767px){
+		.colmn-sm-12 {
+			float: left;
+			width: 100%;
+		}
+	}
+</style>
+<body >
+<h1>Menu</h1>
+	<section class="column-lg-4 colmn-md-6 colmn-sm-12">
+		<div>
+			<p class="sub1">Section</p>
+			<p class="content">
+			 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce aliquet urna eu odio interdum laoreet. Suspendisse quis luctus massa. Quisque suscipit velit id nisi bibendum posuere. Nunc ac mi id leo luctus pulvinar quis et orci. Aliquam ipsum arcu, fermentum quis erat eget, feugiat ultricies felis. Vivamus nec mollis magna. Sed risus quam, varius non urna id, rutrum tempor elit. Quisque pulvinar libero vitae augue tempor, semper lobortis leo lobortis.
+			</p>
+		</div>
+	</section>
+	<section class="column-lg-4 colmn-md-6 colmn-sm-12">
+		<div>
+			<p class="sub2">Layout</p>
+			<p class="content">Nam dictum nisi in justo hendrerit bibendum. Nullam in eleifend est, quis pellentesque mauris. Sed posuere porttitor nulla, sit amet ultrices velit. Phasellus semper, libero non sollicitudin gravida, augue massa suscipit est, vel faucibus ex purus eu diam. Pellentesque vitae dui nibh. Aenean sed euismod enim. Duis risus nulla, maximus vitae dapibus a, pellentesque non mauris. Morbi scelerisque mi elit, at varius ex dignissim quis.</p>
+		</div>
+	</section>
+	<section class="column-lg-4 colmn-md-12 colmn-sm-12">
+	<div>
+		<p class="sub3">Spacing</p>
+			<p class="content">Donec fermentum neque nisl. Vestibulum a massa commodo libero tempus auctor. Ut laoreet rutrum tortor, ac lobortis erat egestas nec. Vivamus ac metus lobortis, iaculis quam nec, venenatis urna. Mauris pellentesque turpis id ipsum dapibus condimentum. Curabitur volutpat felis orci, ut hendrerit justo fermentum at. Aenean feugiat porttitor suscipit. Ut ut lacus metus. Cras mattis massa in magna suscipit sodales. Curabitur tempus porta justo sed semper. Aenean semper euismod diam quis rhoncus.</p>
+	</div>
+</body>
+</html>
